@@ -8,19 +8,31 @@ const questions = [
     message: "Please enter a project title",
     name: "title",
   },
+  {
+    type: "input",
+    message: "Please enter a project title",
+    name: "title",
+  },
+  {
+    type: "input",
+    message: "Please enter a project title",
+    name: "title",
+  },
 ];
 
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, "", function(error);{
-        if(err){console.log(error)
-        else console.log("success")
-    }
-    ))
-  console.log(generateMarkdown(response));
+  //passing date from user to "write to file" to "generate markdown"
+  fs.writeFile(fileName, generateMarkdown(data), function (error) {
+    if (error) console.log(error);
+    else console.log("success");
+  });
+  //console.log(generateMarkdown(response));
 }
 
 function init() {
   inquirer.prompt(questions).then((response) => {
+    console.log(response);
+    //passing this data to write to file
     writeToFile("README.md", response);
   });
 }
