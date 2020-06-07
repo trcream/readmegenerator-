@@ -10,13 +10,48 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please enter a project title",
-    name: "title",
+    message: "What is your Project about?",
+    name: "description",
   },
   {
     type: "input",
-    message: "Please enter a project title",
-    name: "title",
+    status: "Please Enter Your Table of Contents",
+    name: "table",
+  },
+  {
+    type: "input",
+    message: "Installation",
+    name: "installation",
+  },
+  {
+    type: "input",
+    message: "Usage",
+    name: "usage",
+  },
+  {
+    type: "input",
+    message: "License",
+    name: "license",
+  },
+  {
+    type: "input",
+    message: "Contributing",
+    name: "contributing",
+  },
+  {
+    type: "input",
+    message: "Tests",
+    name: "tests",
+  },
+  {
+    type: "input",
+    message: "Github Profile Picture Link?",
+    name: "photo",
+  },
+  {
+    type: "input",
+    message: "What is your GitHub Email?",
+    name: "email",
   },
 ];
 
@@ -31,7 +66,7 @@ function writeToFile(fileName, data) {
 
 function init() {
   inquirer.prompt(questions).then((response) => {
-    console.log(response);
+    //  console.log(response);
     //passing this data to write to file
     writeToFile("README.md", response);
   });
