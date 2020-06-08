@@ -1,20 +1,23 @@
 
-# 1 
+#  
 
-# 2
+# 
 
-# 3
+# 
 
-# 4
+# Please use the #  to install
 
-# 5
+# 
 
-# 7
+# 
 
-# 8
+When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
 
-# 9
+Please note we have a code of conduct, please follow it in all your interactions with the project.
+  
 
-# 6
+# 
 
-#10
+ ![GithubPhoto](https://avatars1.githubusercontent.com/u/39892545?s=400&u=6810702f8f922e131feb75c580052ba06da1e0f9&v=4)
+
+#

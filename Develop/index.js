@@ -20,7 +20,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "Installation",
+    message: "List installation tools",
     name: "installation",
   },
   {
@@ -34,8 +34,8 @@ const questions = [
     name: "license",
   },
   {
-    type: "input",
-    message: "Contributing",
+    type: "confirm",
+    message: "Would you like to add a contributing section?",
     name: "contributing",
   },
   {
@@ -45,7 +45,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "Github Profile Picture Link?",
+    message: "What is your Github Picture Link?",
     name: "photo",
   },
   {

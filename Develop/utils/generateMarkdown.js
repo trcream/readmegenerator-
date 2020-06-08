@@ -35,7 +35,7 @@ function generateTable(table) {
 }
 
 function generateInstallation(Installation) {
-  return `# ${Installation}`;
+  return `# Please use the # ${Installation} to install`;
 }
 
 function generateUsage(usage) {
@@ -43,7 +43,15 @@ function generateUsage(usage) {
 }
 
 function generateContributing(contributing) {
-  return `# ${contributing}`;
+  console.log(contributing);
+  if (contributing === true) {
+    return `When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+
+Please note we have a code of conduct, please follow it in all your interactions with the project.
+  `;
+  } else if (contributing === false) {
+    return ``;
+  }
 }
 
 function generateTests(tests) {
@@ -51,7 +59,8 @@ function generateTests(tests) {
 }
 
 function generatePhoto(photo) {
-  return `# ${photo}`;
+  return ` ![GithubPhoto](${photo})`;
+  // return `# ${photo}`;
 }
 
 function generateLicense(license) {
